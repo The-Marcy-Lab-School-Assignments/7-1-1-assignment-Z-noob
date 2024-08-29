@@ -4,6 +4,7 @@ import NotFoundPage from './pages/NotFoundPage'
 import BotPage from './pages/BotsPage'
 
 // TODO: import Routes and Route
+import { Routes, Route } from 'react-router-dom'
 
 const App = () => {
 
@@ -14,7 +15,11 @@ const App = () => {
 
   return (
     <div className="App">
-      <BotPage />
+      <Routes>
+        <Route path="/" element={<BotPage />} />
+        <Route path="/robots/:id" element={<BotSpecsPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
     </div>
   );
 }

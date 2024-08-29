@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router-dom';
+
 const BotClassIcon = (bot_class) => {
   switch (bot_class) {
     case "Assault":
@@ -17,9 +19,12 @@ const BotClassIcon = (bot_class) => {
 // - Do NOT use a <Link> component to accomplish this. Use the `useNavigate` hook instead.
 
 const BotCard = ({ bot }) => {
+  const navigate = useNavigate();  // Initialize useNavigate hook
 
   const handleClick = () => {
-    console.log(`take me to robot ${robot.id}`);
+    // Use navigate to programmatically change the route
+    console.log(bot)
+    navigate(`/robots/${bot.id}`);
   }
 
   return (
