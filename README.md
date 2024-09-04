@@ -26,22 +26,22 @@ There are 14 tasks to complete and 1 bonus.
 Your goal is to meet at least 75% of these requirements to complete the assignment. But don't stop there! Shoot for 100%!
 
 **Functionality**
-- [ ] Navigating to `/` renders the `BotsPage`
-- [ ] Clicking on a robot navigates the user to `/robots:/id` where `:id` is the id of the clicked robot.
-- [ ] Navigating to `/robots/:id` renders the `BotSpecsPage`
-- [ ] The `BotSpecsPage` renders the robot whose `id` matches the `:id` portion of the URL
-- [ ] Navigating to any other URL renders the `NotFoundPage` component
-- [ ] Wherever the `GoHomeButton` component is rendered, clicking on the button navigates the user back to the `/` page.
-Score: 0/6
+- [x] Navigating to `/` renders the `BotsPage`
+- [x] Clicking on a robot navigates the user to `/robots:/id` where `:id` is the id of the clicked robot.
+- [x] Navigating to `/robots/:id` renders the `BotSpecsPage`
+- [x] The `BotSpecsPage` renders the robot whose `id` matches the `:id` portion of the URL
+- [x] Navigating to any other URL renders the `NotFoundPage` component
+- [x] Wherever the `GoHomeButton` component is rendered, clicking on the button navigates the user back to the `/` page.
+Score: 6/6
 
 **React Fundamentals**
-- [ ] Uses `BrowserRouter` in `main.jsx` to provide routing to the entire `App`
-- [ ] Uses `Routes` in `App.jsx` to render multiple Routes
-- [ ] Uses `Route` to render a component based on the URL
-- [ ] Uses `Link` to render a component that redirects the user upon click
-- [ ] Uses `useParams` to get parts of dynamic URL
-- [ ] Uses `useNavigate` to programmatically redirect the user
-Score: 0/6
+- [x] Uses `BrowserRouter` in `main.jsx` to provide routing to the entire `App`
+- [x] Uses `Routes` in `App.jsx` to render multiple Routes
+- [x] Uses `Route` to render a component based on the URL
+- [x] Uses `Link` to render a component that redirects the user upon click
+- [x] Uses `useParams` to get parts of dynamic URL
+- [x] Uses `useNavigate` to programmatically redirect the user
+Score: 6/6
 
 **Miscellaneous**
 - [x] Props are extracted in child components using destructuring
